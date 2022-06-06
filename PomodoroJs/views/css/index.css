@@ -1,0 +1,87 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --background: #0a192f;
+    --background-task-container: #173664;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--background);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    width: 600px;
+    height: 200px;
+    border-radius: 10px;
+    background: var(--background-task-container);
+    overflow: hidden;
+}
+
+.container form{
+    margin: 40px auto;
+}
+
+.container form input[type="text"]{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.container form input[type="submit"]{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 80px;
+    outline: none;
+}
+
+.tasks{
+    width: 400px;
+    border-top: 1px solid #000;
+    height: 100px;
+    margin: 110px auto;
+    position: absolute;
+    overflow: hidden;
+}
+
+.tasks p{
+    position: relative;
+    top: 10px;
+}
+
+.newTsk{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    width: 120px;
+    outline: none;
+}
+
+#btnAddTask{
+    display: none;
+}
+
+#task-span{
+    font-weight: bolder;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.task-new{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 120px;
+    outline: none;
+}
